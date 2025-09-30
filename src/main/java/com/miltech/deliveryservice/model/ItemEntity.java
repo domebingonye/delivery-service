@@ -28,8 +28,4 @@ public class ItemEntity implements Serializable {
 
     @Column(name = "BOX_CODE")
     private String boxCode;
-
-    @Version
-    @Column(name = "VERSION")
-    private Integer version;
 }

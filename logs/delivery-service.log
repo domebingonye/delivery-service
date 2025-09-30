@@ -3168,3 +3168,330 @@ org.hibernate.NonUniqueResultException: Query did not return a unique result: 2 
 2025-09-30T21:53:48.871+01:00  INFO 51516 --- [delivery-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-30T21:53:48.877+01:00  INFO 51516 --- [delivery-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-09-30T21:53:48.889+01:00  INFO 51516 --- [delivery-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-30T22:58:47.747+01:00  INFO 33652 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Starting DeliveryServiceApplication using Java 23.0.1 with PID 33652 (C:\Users\domeb\IdeaProjects\delivery-service\target\classes started by domeb in C:\Users\domeb\IdeaProjects\delivery-service)
+2025-09-30T22:58:47.750+01:00  INFO 33652 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-30T22:58:49.731+01:00  INFO 33652 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30T22:58:49.805+01:00  INFO 33652 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2025-09-30T22:58:51.077+01:00  INFO 33652 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6060 (http)
+2025-09-30T22:58:51.104+01:00  INFO 33652 --- [delivery-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-30T22:58:51.104+01:00  INFO 33652 --- [delivery-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-30T22:58:51.198+01:00  INFO 33652 --- [delivery-service] [main] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring embedded WebApplicationContext
+2025-09-30T22:58:51.199+01:00  INFO 33652 --- [delivery-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3358 ms
+2025-09-30T22:58:52.015+01:00  INFO 33652 --- [delivery-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30T22:58:52.138+01:00  INFO 33652 --- [delivery-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-30T22:58:52.170+01:00  WARN 33652 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-09-30T22:58:52.304+01:00  INFO 33652 --- [delivery-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-30T22:58:52.795+01:00  INFO 33652 --- [delivery-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-30T22:58:52.841+01:00  INFO 33652 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-30T22:58:53.667+01:00  INFO 33652 --- [delivery-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: bcee001d-fd78-4a73-abff-c6799dddd12d
+2025-09-30T22:58:53.669+01:00  INFO 33652 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-30T22:59:01.049+01:00  WARN 33652 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-30T22:59:01.080+01:00  INFO 33652 --- [delivery-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-30T22:59:02.162+01:00  INFO 33652 --- [delivery-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-30T22:59:02.820+01:00  INFO 33652 --- [delivery-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T22:59:03.776+01:00  INFO 33652 --- [delivery-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-30T22:59:05.697+01:00  INFO 33652 --- [delivery-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-30T22:59:05.828+01:00  INFO 33652 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6060 (http) with context path '/delivery-service'
+2025-09-30T22:59:05.851+01:00  INFO 33652 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Started DeliveryServiceApplication in 19.044 seconds (process running for 19.976)
+2025-09-30T23:00:30.297+01:00  INFO 33652 --- [delivery-service] [tomcat-handler-0] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-30T23:00:30.302+01:00  INFO 33652 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-30T23:00:30.303+01:00  INFO 33652 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-30T23:00:30.344+01:00 ERROR 33652 --- [delivery-service] [tomcat-handler-0] c.m.d.exception.ExceptionAdvice          : Error:::
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329) ~[na:na]
+
+2025-09-30T23:01:13.750+01:00 ERROR 33652 --- [delivery-service] [tomcat-handler-3] c.m.d.exception.ExceptionAdvice          : Error:::
+
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.miltech.deliveryservice.domain.Box> com.miltech.deliveryservice.controller.DeliveryController.createBox(com.miltech.deliveryservice.domain.Box): [Field error in object 'box' on field 'weight': rejected value [9000.0]; codes [Max.box.weight,Max.weight,Max.double,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [box.weight,weight]; arguments []; default message [weight],500]; default message [Weight must not be more than 500]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:159) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329) ~[na:na]
+
+2025-09-30T23:03:08.310+01:00  INFO 52104 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Starting DeliveryServiceApplication using Java 23.0.1 with PID 52104 (C:\Users\domeb\IdeaProjects\delivery-service\target\classes started by domeb in C:\Users\domeb\IdeaProjects\delivery-service)
+2025-09-30T23:03:08.313+01:00  INFO 52104 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-30T23:03:09.946+01:00  INFO 52104 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30T23:03:10.028+01:00  INFO 52104 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2025-09-30T23:03:11.012+01:00  INFO 52104 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6060 (http)
+2025-09-30T23:03:11.036+01:00  INFO 52104 --- [delivery-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-30T23:03:11.036+01:00  INFO 52104 --- [delivery-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-30T23:03:11.124+01:00  INFO 52104 --- [delivery-service] [main] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring embedded WebApplicationContext
+2025-09-30T23:03:11.124+01:00  INFO 52104 --- [delivery-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2718 ms
+2025-09-30T23:03:11.957+01:00  INFO 52104 --- [delivery-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30T23:03:12.119+01:00  INFO 52104 --- [delivery-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-30T23:03:12.135+01:00  WARN 52104 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-09-30T23:03:12.241+01:00  INFO 52104 --- [delivery-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-30T23:03:12.699+01:00  INFO 52104 --- [delivery-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-30T23:03:12.743+01:00  INFO 52104 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-30T23:03:13.398+01:00  INFO 52104 --- [delivery-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: f93a8efc-e890-4d74-a03b-5a25fd68aa02
+2025-09-30T23:03:13.401+01:00  INFO 52104 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-30T23:03:13.814+01:00  WARN 52104 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-30T23:03:13.855+01:00  INFO 52104 --- [delivery-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-30T23:03:14.825+01:00  INFO 52104 --- [delivery-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-30T23:03:15.456+01:00  INFO 52104 --- [delivery-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T23:03:16.048+01:00  INFO 52104 --- [delivery-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-30T23:03:17.997+01:00  INFO 52104 --- [delivery-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-30T23:03:18.181+01:00  INFO 52104 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6060 (http) with context path '/delivery-service'
+2025-09-30T23:03:18.201+01:00  INFO 52104 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Started DeliveryServiceApplication in 10.703 seconds (process running for 11.487)
+2025-09-30T23:03:24.747+01:00  INFO 52104 --- [delivery-service] [tomcat-handler-0] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-30T23:03:24.747+01:00  INFO 52104 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-30T23:03:24.748+01:00  INFO 52104 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-30T23:03:51.736+01:00  INFO 52104 --- [delivery-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-30T23:03:51.744+01:00  INFO 52104 --- [delivery-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-30T23:03:51.749+01:00  INFO 52104 --- [delivery-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T23:03:51.753+01:00  INFO 52104 --- [delivery-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-30T23:03:51.764+01:00  INFO 52104 --- [delivery-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-30T23:19:36.290+01:00  INFO 59252 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Starting DeliveryServiceApplication using Java 23.0.1 with PID 59252 (C:\Users\domeb\IdeaProjects\delivery-service\target\classes started by domeb in C:\Users\domeb\IdeaProjects\delivery-service)
+2025-09-30T23:19:36.293+01:00  INFO 59252 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-30T23:19:38.799+01:00  INFO 59252 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30T23:19:38.900+01:00  INFO 59252 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2025-09-30T23:19:40.214+01:00  INFO 59252 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6060 (http)
+2025-09-30T23:19:40.239+01:00  INFO 59252 --- [delivery-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-30T23:19:40.240+01:00  INFO 59252 --- [delivery-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-30T23:19:40.315+01:00  INFO 59252 --- [delivery-service] [main] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring embedded WebApplicationContext
+2025-09-30T23:19:40.316+01:00  INFO 59252 --- [delivery-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3953 ms
+2025-09-30T23:19:42.007+01:00  INFO 59252 --- [delivery-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30T23:19:42.304+01:00  INFO 59252 --- [delivery-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-30T23:19:42.354+01:00  WARN 59252 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-09-30T23:19:42.445+01:00  INFO 59252 --- [delivery-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-30T23:19:42.958+01:00  INFO 59252 --- [delivery-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-30T23:19:42.997+01:00  INFO 59252 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-30T23:19:44.055+01:00  INFO 59252 --- [delivery-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 81d17cf8-01f6-4b7c-ae4b-708e7d720e0e
+2025-09-30T23:19:44.057+01:00  INFO 59252 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-30T23:19:44.322+01:00  WARN 59252 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-30T23:19:44.352+01:00  INFO 59252 --- [delivery-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-30T23:19:45.521+01:00  INFO 59252 --- [delivery-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-30T23:19:46.123+01:00  INFO 59252 --- [delivery-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T23:19:46.847+01:00  INFO 59252 --- [delivery-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-30T23:19:49.263+01:00  INFO 59252 --- [delivery-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-30T23:19:49.389+01:00  INFO 59252 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6060 (http) with context path '/delivery-service'
+2025-09-30T23:19:49.408+01:00  INFO 59252 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Started DeliveryServiceApplication in 13.862 seconds (process running for 14.85)
+2025-09-30T23:20:47.580+01:00  INFO 59252 --- [delivery-service] [tomcat-handler-0] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-30T23:20:47.582+01:00  INFO 59252 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-30T23:20:47.584+01:00  INFO 59252 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-30T23:20:48.589+01:00  INFO 59252 --- [delivery-service] [tomcat-handler-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 453 ms
+2025-09-30T23:24:41.150+01:00  INFO 59252 --- [delivery-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-30T23:24:41.168+01:00  INFO 59252 --- [delivery-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-30T23:24:52.650+01:00  INFO 57760 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Starting DeliveryServiceApplication using Java 23.0.1 with PID 57760 (C:\Users\domeb\IdeaProjects\delivery-service\target\classes started by domeb in C:\Users\domeb\IdeaProjects\delivery-service)
+2025-09-30T23:24:52.652+01:00  INFO 57760 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-30T23:24:54.582+01:00  INFO 57760 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30T23:24:54.695+01:00  INFO 57760 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2025-09-30T23:24:55.878+01:00  INFO 57760 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6060 (http)
+2025-09-30T23:24:55.902+01:00  INFO 57760 --- [delivery-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-30T23:24:55.902+01:00  INFO 57760 --- [delivery-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-30T23:24:55.991+01:00  INFO 57760 --- [delivery-service] [main] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring embedded WebApplicationContext
+2025-09-30T23:24:55.992+01:00  INFO 57760 --- [delivery-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3265 ms
+2025-09-30T23:24:57.591+01:00  INFO 57760 --- [delivery-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30T23:24:57.702+01:00  INFO 57760 --- [delivery-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-30T23:24:57.709+01:00  WARN 57760 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-09-30T23:24:57.773+01:00  INFO 57760 --- [delivery-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-30T23:24:58.150+01:00  INFO 57760 --- [delivery-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-30T23:24:58.190+01:00  INFO 57760 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-30T23:24:58.640+01:00  INFO 57760 --- [delivery-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 38bb39bc-06c9-4736-8278-2e204a762533
+2025-09-30T23:24:58.642+01:00  INFO 57760 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-30T23:24:58.808+01:00  WARN 57760 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-30T23:24:58.834+01:00  INFO 57760 --- [delivery-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-30T23:24:59.939+01:00  INFO 57760 --- [delivery-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-30T23:25:00.516+01:00  INFO 57760 --- [delivery-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T23:25:01.578+01:00  INFO 57760 --- [delivery-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-30T23:25:04.529+01:00  INFO 57760 --- [delivery-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-30T23:25:04.641+01:00  INFO 57760 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6060 (http) with context path '/delivery-service'
+2025-09-30T23:25:04.661+01:00  INFO 57760 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Started DeliveryServiceApplication in 12.932 seconds (process running for 13.777)
+2025-09-30T23:25:23.691+01:00  INFO 57760 --- [delivery-service] [tomcat-handler-0] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-30T23:25:23.692+01:00  INFO 57760 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-30T23:25:23.692+01:00  INFO 57760 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-30T23:25:24.412+01:00  INFO 57760 --- [delivery-service] [tomcat-handler-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 433 ms
+2025-09-30T23:28:17.383+01:00  INFO 57760 --- [delivery-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-30T23:28:17.392+01:00  INFO 57760 --- [delivery-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-30T23:28:17.399+01:00  INFO 57760 --- [delivery-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T23:28:17.406+01:00  INFO 57760 --- [delivery-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-30T23:28:17.414+01:00  INFO 57760 --- [delivery-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-30T23:28:42.718+01:00  INFO 20096 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Starting DeliveryServiceApplication using Java 23.0.1 with PID 20096 (C:\Users\domeb\IdeaProjects\delivery-service\target\classes started by domeb in C:\Users\domeb\IdeaProjects\delivery-service)
+2025-09-30T23:28:42.724+01:00  INFO 20096 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-30T23:28:46.034+01:00  INFO 20096 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30T23:28:46.176+01:00  INFO 20096 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2025-09-30T23:28:48.019+01:00  INFO 20096 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6060 (http)
+2025-09-30T23:28:48.300+01:00  INFO 20096 --- [delivery-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-30T23:28:48.300+01:00  INFO 20096 --- [delivery-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-30T23:28:48.404+01:00  INFO 20096 --- [delivery-service] [main] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring embedded WebApplicationContext
+2025-09-30T23:28:48.404+01:00  INFO 20096 --- [delivery-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5453 ms
+2025-09-30T23:28:49.544+01:00  INFO 20096 --- [delivery-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30T23:28:49.759+01:00  INFO 20096 --- [delivery-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-30T23:28:49.775+01:00  WARN 20096 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-09-30T23:28:49.883+01:00  INFO 20096 --- [delivery-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-30T23:28:50.693+01:00  INFO 20096 --- [delivery-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-30T23:28:50.778+01:00  INFO 20096 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-30T23:28:51.965+01:00  INFO 20096 --- [delivery-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 59624145-be0a-48b7-a0ef-fa1590892998
+2025-09-30T23:28:51.969+01:00  INFO 20096 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-30T23:28:52.374+01:00  WARN 20096 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-30T23:28:52.432+01:00  INFO 20096 --- [delivery-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-30T23:28:54.397+01:00  INFO 20096 --- [delivery-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-30T23:28:55.253+01:00  INFO 20096 --- [delivery-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T23:28:56.328+01:00  INFO 20096 --- [delivery-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-30T23:29:00.223+01:00  INFO 20096 --- [delivery-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-30T23:29:00.416+01:00  INFO 20096 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6060 (http) with context path '/delivery-service'
+2025-09-30T23:29:00.464+01:00  INFO 20096 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Started DeliveryServiceApplication in 19.634 seconds (process running for 22.044)
+2025-09-30T23:37:26.102+01:00  INFO 48664 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Starting DeliveryServiceApplication using Java 23.0.1 with PID 48664 (C:\Users\domeb\IdeaProjects\delivery-service\target\classes started by domeb in C:\Users\domeb\IdeaProjects\delivery-service)
+2025-09-30T23:37:26.102+01:00  INFO 48664 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-30T23:37:28.391+01:00  INFO 48664 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30T23:37:28.486+01:00  INFO 48664 --- [delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2025-09-30T23:37:29.518+01:00  INFO 48664 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6060 (http)
+2025-09-30T23:37:29.550+01:00  INFO 48664 --- [delivery-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-30T23:37:29.550+01:00  INFO 48664 --- [delivery-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-30T23:37:29.614+01:00  INFO 48664 --- [delivery-service] [main] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring embedded WebApplicationContext
+2025-09-30T23:37:29.614+01:00  INFO 48664 --- [delivery-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3441 ms
+2025-09-30T23:37:30.343+01:00  INFO 48664 --- [delivery-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30T23:37:30.675+01:00  INFO 48664 --- [delivery-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-30T23:37:30.740+01:00  WARN 48664 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2025-09-30T23:37:30.805+01:00  INFO 48664 --- [delivery-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-30T23:37:31.245+01:00  INFO 48664 --- [delivery-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-30T23:37:31.303+01:00  INFO 48664 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-30T23:37:31.845+01:00  INFO 48664 --- [delivery-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: dd5b1ab3-6b85-477f-ba6c-91b47196ad71
+2025-09-30T23:37:31.845+01:00  INFO 48664 --- [delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-30T23:37:34.925+01:00  WARN 48664 --- [delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-30T23:37:34.961+01:00  INFO 48664 --- [delivery-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-30T23:37:36.088+01:00  INFO 48664 --- [delivery-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-30T23:37:36.653+01:00  INFO 48664 --- [delivery-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30T23:37:37.194+01:00  INFO 48664 --- [delivery-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-30T23:37:39.684+01:00  INFO 48664 --- [delivery-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-30T23:37:39.854+01:00  INFO 48664 --- [delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6060 (http) with context path '/delivery-service'
+2025-09-30T23:37:39.878+01:00  INFO 48664 --- [delivery-service] [main] c.m.d.DeliveryServiceApplication         : Started DeliveryServiceApplication in 14.557 seconds (process running for 15.832)
+2025-09-30T23:37:52.535+01:00  INFO 48664 --- [delivery-service] [tomcat-handler-0] o.a.c.c.C.[.[.[/delivery-service]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-30T23:37:52.535+01:00  INFO 48664 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-30T23:37:52.535+01:00  INFO 48664 --- [delivery-service] [tomcat-handler-0] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-30T23:37:53.457+01:00  INFO 48664 --- [delivery-service] [tomcat-handler-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 443 ms

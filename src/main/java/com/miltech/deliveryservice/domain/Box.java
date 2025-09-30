@@ -1,6 +1,8 @@
 package com.miltech.deliveryservice.domain;
 
 import com.miltech.deliveryservice.enums.State;
+import io.swagger.v3.oas.annotations.Hidden;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Max;
@@ -9,6 +11,7 @@ import lombok.Data;
 
 @Data
 public class Box {
+    @Schema(hidden = true)
     private Long id;
     @Size(max = 20, message = "txtReference must not be more than 20 characters")
     private String txtReference;

@@ -1,11 +1,13 @@
 package com.miltech.deliveryservice.domain;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 
 @Data
 public class Item {
+    @Schema(hidden = true)
     private Long id;
     @Pattern(regexp = "^[a-zA-Z0-9_-]+$", message = "Name can only contain letters, numbers, hyphen (-), and underscore (_)")
     private String name;

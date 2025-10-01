@@ -1,6 +1,5 @@
 package com.miltech.deliveryservice.exception;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.miltech.deliveryservice.domain.BaseResponse;
 import com.miltech.deliveryservice.enums.ResponseCodes;
 import lombok.extern.slf4j.Slf4j;
